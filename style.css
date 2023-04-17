@@ -1,0 +1,529 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: flex;
+   
+    flex-direction: column;
+
+}
+
+
+.flex-container {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.container-fluid {
+    max-width: 100%;
+}
+
+
+header {
+ 
+  padding-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+div#logo span {
+    font-weight: 800;
+    font-size: 25px;
+    margin-top: 3px;
+   
+   
+    
+}
+
+
+main {
+    background: url(images/background_1.jpeg);
+    background-size: cover;
+    background-position:bottom;
+   min-height: 800px;
+  
+    
+}
+
+div.container.top{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex: 100%;
+}
+
+/* main headers area */
+
+
+div.left-side {
+    margin-top:15% ;
+    display:row;
+  
+}
+
+h1#left_text {
+    color: white;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.left-bg {
+    background-color: black;
+    width: 550px;
+   
+}
+
+h3#left_text {
+    color: white;
+    margin-left: 18px;
+    padding-top: 5px;
+}
+.left-bg2 {
+    background-color: black;
+    width: 580px;
+    height: 40px;
+}
+
+
+
+
+
+/* form area  */
+
+div.form-b {
+    color:black;
+    background-color:white;
+    min-width: 540px;
+    min-height:520px ;
+    margin-top: 120px;
+    flex-wrap: wrap;
+    flex: 100%;
+}
+
+h1#right_text {
+    padding-top: 40px;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+h3#right_text{
+    justify-content: center;
+    
+}
+
+div.right-side {
+   text-align: center;
+}
+
+form input {
+    padding-left: 15px;
+}
+form {
+    min-width: 80%;
+    min-height: 70px;
+}
+
+input#input_name {
+    width: 80%;
+    height: 50px;
+    font-size: larger;
+}
+
+
+
+input#input_email {
+    width: 80%;
+    height: 50px;
+    font-size: larger;
+    margin-bottom: 15px;
+}
+
+button#form_b {
+    border: 1px solid  rgb(66, 201, 66);
+    min-width: 80%;
+    min-height: 70px;
+    color: white;
+    background-color: rgb(66, 201, 66);
+    font-size: larger;
+}
+
+
+
+/* about image area  */
+
+div.learn-row img {
+    min-width: 200px;
+    border-radius: 50%;
+    border: 2px solid;
+    height:200px;
+    font-size: larger;
+    flex: 100%;
+   
+  
+}
+
+div.learn-row {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 70px;
+    flex: 100%;
+   
+   
+}
+
+div#learn {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom:60px ;
+    flex: 1005;
+
+}
+
+ /* about company area*/
+
+ div.row.botton {
+    background-color: rgb(227, 219, 208);
+    min-height: 400px;
+    padding-top: 40px;
+    text-align: center;
+ }
+
+div.about h1{
+    margin-bottom: 35px;
+ }
+
+  /* about the company area */
+
+ div.profile {
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom:50px;
+    padding-top: 30px;
+   min-height: 500px;
+
+ }
+
+ div#pro1 img {
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid;
+    height:200px;
+    font-size: larger;
+   justify-content: center;
+ }
+
+
+ div#pro1 p {
+    padding-top: 30px;
+    margin-bottom: 20px;
+ }
+
+ /* footer area  */
+
+ div#logo2 span {
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+   
+}
+
+
+div#logo2 {
+    margin-left: 40px;
+    padding-top: 40px;
+}
+
+div#rights {
+    color: white;
+   margin-right: 40px;
+ padding-bottom: 30px;
+    text-align: right;
+}
+
+div#rights span {
+    margin-bottom: 30px;
+}
+
+ footer{
+    background-color:black;
+    display: row;
+  
+   
+ }
+
+
+     /* Media Queries area  */
+
+/* Extra small devices (phones, 600px and down) */
+  @media only screen and (max-width: 600px) {
+
+      /* header and main area */
+
+  
+
+    div.flex-container {
+      
+        flex-direction: column;
+        margin: 0%;
+    }
+
+      header .container {
+        margin: 0;
+  
+    }
+
+    .flex-container {
+        min-width: 200%;
+    }
+
+    h1#logo {
+        margin-left: 5px;
+    }
+
+    main {
+      
+       /* flex: 100%; */
+       max-height:70%;
+       margin: 0;
+       flex-wrap: nowrap;
+    }
+
+    main .container-fluid {
+        
+        flex-direction: column;
+        align-items:normal;
+        font-size: medium;
+        text-align: justify;
+
+        /* min-width: 200%; */
+        
+        
+
+    }
+
+    .container {
+        padding-left: 0;
+        justify-content: center;
+    }
+ 
+    div.container-fluid {
+       text-align: justify;
+       flex-wrap: nowrap;
+        min-width: 100%;
+       flex-direction: column;
+       align-items: normal;
+       min-width: 100%;
+
+    }
+
+    div.container {
+        flex-wrap: wrap;
+        flex-direction: column;
+        min-width: 100%;
+        justify-content:center;
+       
+       
+    }
+
+
+    div.container.top {
+      flex-direction: column;
+      flex-wrap: wrap;
+      min-width: 100%;
+    }
+      
+      div#logo span {
+          
+          font-size: 20px;
+          margin-top: 3px;
+       
+      }
+
+
+/* top body area  */
+
+
+      div.left-side {
+        margin-top:10% ;
+        flex-direction: column;
+        min-width: 100%;
+        min-height: 90px;
+    
+      
+    }
+    
+    h1#left_text {
+       
+      text-align: left;
+        margin-bottom: 0;
+      margin-left: 20px;
+       max-width: 100%;
+    }
+    
+    .left-bg {
+      max-width: 60%;
+      margin-left: 100px;
+        
+       
+    }
+    
+    h3#left_text {
+        text-align: left;
+      max-width: 100%;
+       margin-bottom: 0;
+       margin-left: 20px;
+       
+    }
+    .left-bg2 {
+       margin-top: 3%;
+       max-width: 50%;
+       min-height:70px;
+       margin-left: 100px;
+    }
+
+
+    /* form area  */
+
+    div.right-side {
+        min-width: 50%;
+        text-align: left;
+        margin-left: 15%;
+       
+    }
+    div.form-b {
+        text-align: left;
+        max-width: 90px;
+        margin: 0;
+        margin-bottom: 10px;
+        
+    }
+
+    h1#right_text {
+        
+        padding-top: 40px;
+        padding-bottom: 10px;
+    }
+    
+    h3#right_text{
+        justify-content: center;
+       
+    }
+
+
+form {
+    padding-left: 70px;
+    padding-bottom: 20px;
+}
+   
+
+  /* about image area  */
+
+    div.learn-row {
+        flex-direction: column;
+        gap: 50px;  
+        text-align:left;
+       padding-left: 20px;
+        flex: 100%;
+        min-width: 100%;
+        text-align: left;
+       
+       
+    }
+
+ 
+  
+  div#learn{
+    text-align: left;
+    padding-left: 20px;
+  }
+
+
+
+  /* about the company area */
+
+
+    div.row.bottom {
+        flex-direction: column;
+        min-width: 100%;
+        text-align: center;
+    }
+
+
+
+   div#circle_1 h3 p {
+       text-align: center;
+    }
+
+    div.about {
+        text-align: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-bottom: 30px;
+    }
+
+
+/* bottom 2 images area  */
+
+    div.profile {
+        flex-direction: column;
+    
+        text-align: left;
+        padding-left: 20px;
+    }
+
+  
+
+   
+
+    div#pro1 {
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+
+
+    /* footer area  */
+
+    footer {
+        flex-direction: row;
+        /* max-height: 80px; */
+       min-width: 100%;
+       text-align: justify;
+    }
+
+
+   div#logo2 span {
+    
+        font-weight: 800;
+        font-size: 20px;
+      
+       
+    }
+    div#logo2 {
+        margin-left: 30px;
+        padding-top: 10px;
+    }
+    
+    div#rights {
+    margin-bottom: 50px;
+    
+        
+    }
+
+    div.container.bottom  {
+        justify-content: row;
+    }
+
+
+
+    
+    
+
+    
+}
